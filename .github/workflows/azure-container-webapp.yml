@@ -61,9 +61,11 @@ jobs:
       - name: Build and push container image to registry
         uses: docker/build-push-action@0565240e2d4ab88bba5387d719585280857ece09 # v5.0.0
         with:
+          context: .
           push: true
           tags: ghcr.io/${{ env.REPO }}:${{ github.sha }}
-          build-args: REACT_APP_API_URL=${{ vars.REACT_APP_API_URL }}
+          build-args: |
+            REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }}
           file: ./Dockerfile-prod
 
   deploy:
