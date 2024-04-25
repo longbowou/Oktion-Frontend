@@ -63,8 +63,8 @@ jobs:
         with:
           push: true
           tags: ghcr.io/${{ env.REPO }}:${{ github.sha }}
-          file: ./Dockerfile-prod
           build-args: REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }}
+          file: ./Dockerfile-prod
 
   deploy:
     permissions:
