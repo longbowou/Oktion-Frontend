@@ -1,0 +1,17 @@
+FROM node:18 as build
+
+WORKDIR /app
+RUN yarn global add pnpm
+COPY package*.json ./
+RUN pnpm i
+COPY . .
+RUN pnpm run build
+
+FROM nginx:latest
+
+COPY --from=build /app/build /usr/share/nginx/html
+COPY nginx/default.conf /etc/nginx/nginx.conf
+
+EXPOSE 80/tcp
+
+CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
