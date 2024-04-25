@@ -1,0 +1,27 @@
+version: '3.9'
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+    restart: "no"
+  
+  nginx:
+    image: nginx:stable-alpine
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+      - .:/app
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.oktion.rule=Host(`oktion.danielblandes.com`)
+      - traefik.http.routers.oktion.tls=true
+      - traefik.http.routers.oktion.tls.certresolver=le
+    networks:
+      - default
+      - traefik-proxy
+    restart: always
+
+networks:
+  traefik-proxy:
+    external: true

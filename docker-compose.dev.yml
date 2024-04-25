@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  app:
+    command: pnpm run debug
+    ports:
+      - "3000:3000"
+      - "9229:9229"

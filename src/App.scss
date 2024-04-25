@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$font-family-sans-serif: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+@import './_metronic/assets/fonticon/fonticon.css';
+@import './_metronic/assets/keenicons/duotone/style.css';
+@import './_metronic/assets/keenicons/outline/style.css';
+@import './_metronic/assets/keenicons/solid/style.css';
+
+@import './_metronic/assets/sass/style.scss';
+@import './_metronic/assets/sass/plugins.scss';
+@import './_metronic/assets/sass/style.react.scss';
+
+.tick-credits {
+  display: none !important;
+}
+
+.tick {
+  font-size: 3.2rem;
+  line-height: unset !important;
+}
+
+.tick-label {
+  font-size: .7em;
+  text-align: center;
+}
+
+.tick-group {
+  margin: 0 .25em;
+  text-align: center;
+}
