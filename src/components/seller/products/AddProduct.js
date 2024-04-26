@@ -121,7 +121,7 @@ const AddProductPage = () => {
 
                             <div className="col-md-12 fv-row mb-5">
                                 <label className="fs-5 fw-bold mb-2" htmlFor="name">Bid Start Price</label>
-                                <input disabled={loading} name="bidStartingPrice" min={price} type="number"
+                                <input disabled={loading} name="bidStartingPrice" type="number"
                                        className="form-control" id="name"
                                        placeholder="Bid Start Price"
                                        required/>
