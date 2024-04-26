@@ -41,6 +41,8 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: 'Production'
     
     steps:
       - uses: actions/checkout@v3
