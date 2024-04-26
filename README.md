@@ -4,13 +4,35 @@ Oktion is a cutting-edge online auction platform designed to revolutionize the w
 buying and selling goods and services. With a focus on security, transparency, and user-friendliness, Oktion provides a
 seamless auction experience for both buyers and sellers, fostering trust and confidence in every transaction.
 
+## Class Diagram
+
+![class-diagram.png](screenshots/class-diagram.png)
+
+## ER Diagram
+
+![er-diagram.png](screenshots/er-diagram.png)
+
+## Architecture
+
+![architecture.png](screenshots/architecture.png)
+
+## GitHub Actions
+
+![Screenshot2024-04-26at1.47.00AM.png](screenshots/Screenshot2024-04-26at1.47.00AM.png)
+![Screenshot2024-04-26at1.46.53AM.png](screenshots/Screenshot2024-04-26at1.46.53AM.png)
+
+## Azure Web App
+
+![Screenshot2024-04-26at1.47.58AM.png](screenshots/Screenshot2024-04-26at1.47.58AM.png)
+![Screenshot2024-04-26at1.46.32AM.png](screenshots/Screenshot2024-04-26at1.46.32AM.png)
+
 ## Online Demo
 
 Feel free to try it out. Check the credentials below.
 
-### Account
+### [Account](https://github.com/longbowou/Oktion-Frontend)
 
-[https://oktion.danielblandes.com](https://oktion.danielblandes.com)
+[https://oktion-frontend.azurewebsites.net](https://oktion-frontend.azurewebsites.net)
 
 - Seller
     - seller@oktion.app
@@ -24,9 +46,9 @@ Feel free to try it out. Check the credentials below.
     - jane@oktion.app
     - janepassword
 
-### App (Backend)
+### [App (Backend)](https://github.com/longbowou/Oktion-Backend)
 
-Swagger - [https://app.oktion.danielblandes.com/api/swagger-ui/index.html](https://app.oktion.danielblandes.com/api/swagger-ui/index.html)
+Swagger - [https://oktion.azurewebsites.net/api/swagger-ui/index.html](https://oktion.azurewebsites.net/api/swagger-ui/index.html)
 
 # Key Features
 
@@ -61,7 +83,7 @@ Swagger - [https://app.oktion.danielblandes.com/api/swagger-ui/index.html](https
 The application architecture is split in two different parts: app(backend) for API and account(frontend) for Sellers and
 Bidding.
 
-### App (Backend With Spring Framework):
+### [App (Backend With Spring Framework)](https://github.com/longbowou/Oktion-Backend)
 
 Oktion's backend, developed using the [Spring Framework](https://spring.io/projects/spring-boot), stands out for its
 robust performance and scalability.
@@ -92,7 +114,7 @@ documentation of the REST API, enabling seamless interaction and testing by deve
   and execute asynchronous tasks at predetermined intervals or times. This allows the backend to handle time-sensitive
   operations, such as closing auctions, in a non-blocking manner.
 
-### Account (React Framework):
+### [Account (React Framework)](https://github.com/longbowou/Oktion-Frontend)
 
 The frontend of Oktion is built using the [React framework](https://legacy.reactjs.org/docs/getting-started.html), a
 popular JavaScript library for building user interfaces.
@@ -118,7 +140,7 @@ applications.
 - Clone the repository
 
 ```bash
-git clone git@gitlab.com:oktion/oktion-account.git
+git@github.com:longbowou/Oktion-Frontend.git
 ```
 
 - Update env variables
