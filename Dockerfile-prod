@@ -6,8 +6,9 @@ WORKDIR /app
 COPY . .
 
 ARG REACT_APP_API_URL
-ENV REACT_APP_API_URL=$REACT_APP_API_URL
-RUN echo "REACT_APP_API_URL=${REACT_APP_API_URL}" > .env
+RUN touch .env
+RUN echo "REACT_APP_API_URL=$REACT_APP_API_URL" >> .env
+RUN cat .env
 
 RUN pnpm i
 RUN pnpm run build
